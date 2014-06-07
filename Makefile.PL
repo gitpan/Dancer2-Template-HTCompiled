@@ -19,15 +19,35 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "Dancer2::Template::HTCompiled",
-  "PREREQ_PM" => {},
-  "VERSION" => "0.001",
+  "PREREQ_PM" => {
+    "Carp" => 0,
+    "Dancer2::Core::Role::Template" => 0,
+    "HTML::Template::Compiled" => 0,
+    "Moo" => 0,
+    "strict" => 0,
+    "warnings" => 0
+  },
+  "TEST_REQUIRES" => {
+    "Data::Dumper" => 0,
+    "Test::More" => 0
+  },
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }
 );
 
 
-my %FallbackPrereqs = ();
+my %FallbackPrereqs = (
+  "Carp" => 0,
+  "Dancer2::Core::Role::Template" => 0,
+  "Data::Dumper" => 0,
+  "HTML::Template::Compiled" => 0,
+  "Moo" => 0,
+  "Test::More" => 0,
+  "strict" => 0,
+  "warnings" => 0
+);
 
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
