@@ -1,0 +1,15 @@
+---
+abstract: 'HTML::Template::Compiled template engine for Dancer2'
+author:
+  - 'Tina Müller <cpan2@tinita.de>'
+build_requires: {}
+configure_requires:
+  ExtUtils::MakeMaker: '6.30'
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141520'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Dancer2-Template-HTCompiled
+version: '0.001'
